@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Commande PDF</title>
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		table td, table th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		table tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		table th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Commande PDF</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Chauffeur </th>
+				<th>Numero d'immatriculation </th>
+				<th>Licence </th>
+				<th>La visite</th>
+				<th>Carte grise</th>
+				<th>Date de début d'assurance</th>
+				<th>Date de fin d'assurance</th>
+				<th>lettre de voiture</th>
+				<th>Kilometre</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			
+				<td>{{ $chauffeur->nomChfr }}</td>
+				<td>{{ $transports->numMatricule }}</td>
+				<td>{{ $transport->licence }}</td>
+				<td>{{ $transport->cartGrise }}</td>
+				<td>{{ $transport->dateDebutAssurance }}</td>
+				<td>{{ $transport->dateFinAssurance }}</td>
+				<td>{{ $transport->kilometre }}</td>
+				
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
